@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <SCRIPT LANGUAGE="Javascript" SRC="JuanGarcia_test_javascript_algo_ex1.js" defer> </SCRIPT>
+  <SCRIPT LANGUAGE="Javascript" SRC="JuanGarcia_test_javascript_algo_ex2.js" defer> </SCRIPT>
+  <SCRIPT LANGUAGE="Javascript" SRC="JuanGarcia_test_javascript_algo_ex3.js" defer> </SCRIPT>
+
+</head>
+<style>   /* Styling */
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+
+  #container {
+    text-align: center;
+  }
+
+  th,
+  td {
+    width: 30px;
+    height: 30px;
+  }
+
+  #errorContainer tbody tr td:first-child {
+    width: 8em;
+    min-width: 8em;
+    max-width: 8em;
+    word-break: break-all;
+    text-align: left;
+  }
+
+  #errorContainer {
+    text-align: right;
+  }
+</style>
+
+<script>
+  window.onload = function () { //Call to the functions in the HTML as mention in the PDF
+    drawTable();
+    checkLine();
+    checkColumn();
+    checkRegion();
+  };
+</script>
+
+<body>
+
+  <div id="tableContainer"> <!-- Container for table display -->
+  </div>
+
+  <br>
+
+  <div id="errorContainer"> <!-- Container for error display -->
+    <p style="text-align: left;" id="correctMessage">Table is correct</p>
+  </div>
+
+</body>
+
+</html>
